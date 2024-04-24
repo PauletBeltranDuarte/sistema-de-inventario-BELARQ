@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Class login
- * handles the user's login and logout process
+ * Class inicio de sesion
+ * configurar el proceso de login y logout
  */
 class Login
 {
