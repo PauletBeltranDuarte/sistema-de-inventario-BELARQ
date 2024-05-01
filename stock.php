@@ -1,6 +1,6 @@
 <?php
 	/*-------------------------
-	Autor: Obed Alvarado
+	Autor: Obed Alvarado 
 	Web: obedalvarado.pw
 	Mail: info@obedalvarado.pw
 	---------------------------*/
@@ -28,8 +28,8 @@
 	?>
 	
     <div class="container">
-	<div class="panel panel-success">
-		<div class="panel-heading">
+	<div class="panel panel-success" style= "border: 1px solid #C0EEF2;">
+		<div class="panel-heading" style= "background-color: #C0EEF2;">
 		    <div class="btn-group pull-right">
 				<button type='button' class="btn btn-success" data-toggle="modal" data-target="#nuevoProducto"><span class="glyphicon glyphicon-plus" ></span> Agregar</button>
 			</div>
@@ -37,7 +37,7 @@
 		</div>
 		<div class="panel-body">
 		
-			
+		
 			
 			<?php
 			include("modal/registro_productos.php");
