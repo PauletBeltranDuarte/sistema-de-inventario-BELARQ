@@ -1,7 +1,7 @@
 <div class="navbar navbar-default navbar-fixed-bottom" >
     <div class="container">
-      <p class="navbar-text pull-left">&copy <?php echo date('Y');?> - Obed Alvarado.
-           <a href="http://obedalvarado.pw/" target="_blank" style="color: #ecf0f1">Sitios Web y Sistemas</a>
+      <p class="navbar-text pull-left">
+           <a href="https://belarq.com/" target="_blank" style="color: #ecf0f1">&copy <?php echo date('Y');?> BELARQ Arquitectos</a>
       </p>
    </div>
 </div>

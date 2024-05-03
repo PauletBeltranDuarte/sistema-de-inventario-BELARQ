@@ -1,16 +1,11 @@
 <?php
-	/*-------------------------
-	Autor: Obed Alvarado 
-	Web: obedalvarado.pw
-	Mail: info@obedalvarado.pw
-	---------------------------*/
 	session_start();
 	if (!isset($_SESSION['user_login_status']) AND $_SESSION['user_login_status'] != 1) {
         header("location: login.php");
 		exit;
         }
 
-	/* Connect To Database*/
+	/* Conectara la base de datos*/
 	require_once ("config/db.php");//Contiene las variables de configuracion para conectar a la base de datos
 	require_once ("config/conexion.php");//Contiene funcion que conecta a la base de datos
 	
@@ -29,11 +24,11 @@
 	
     <div class="container">
 	<div class="panel panel-success" style= "border: 1px solid #C0EEF2;">
-		<div class="panel-heading" style= "background-color: #C0EEF2;">
+		<div class="panel-heading" style= "background-color: #C0EEF2; border: 1px solid #C0EEF2;">
 		    <div class="btn-group pull-right">
-				<button type='button' class="btn btn-success" data-toggle="modal" data-target="#nuevoProducto"><span class="glyphicon glyphicon-plus" ></span> Agregar</button>
+				<button type='button' class="btn btn-light" data-toggle="modal" data-target="#nuevoProducto" style="color: #000000;"><span class="glyphicon glyphicon-plus" ></span> Agregar</button>
 			</div>
-			<h4><i class='glyphicon glyphicon-search'></i> Consultar inventario</h4>
+			<h4 style= "color: #000000;"><i class='glyphicon glyphicon-search'></i> Consultar inventario</h4>
 		</div>
 		<div class="panel-body">
 		

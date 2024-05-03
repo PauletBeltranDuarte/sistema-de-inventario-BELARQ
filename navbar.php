@@ -12,7 +12,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Bodega Belarq</a>
+      <a class="navbar-brand" href="#"></a>
+      <img src="img/logo-belarq.png" width="60" height="52">
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
