@@ -83,7 +83,7 @@
 			?>
 			<div class="table-responsive">
 			  <table class="table">
-				<tr  class="success">
+				<tr style="background-color: #d3f2f5;">
 					<th>Nombre</th>
 					<th>Descripción</th>
 					<th>Agregado</th>

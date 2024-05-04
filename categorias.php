@@ -28,12 +28,12 @@
 	?>
 	
     <div class="container">
-	<div class="panel panel-success">
-		<div class="panel-heading">
+	<div class="panel panel-success" style= "border: 1px solid #C0EEF2;">
+		<div class="panel-heading"  style= "background-color: #C0EEF2; border: 1px solid #C0EEF2;">
 		    <div class="btn-group pull-right">
-				<button type='button' class="btn btn-success" data-toggle="modal" data-target="#nuevoCliente"><span class="glyphicon glyphicon-plus" ></span> Nueva Categoría</button>
+				<button type='button' class="btn btn-light" data-toggle="modal" data-target="#nuevoCliente" style="color: #000000;"><span class="glyphicon glyphicon-plus" ></span> Nueva Categoría</button>
 			</div>
-			<h4><i class='glyphicon glyphicon-search'></i> Buscar Categorías</h4>
+			<h4 style= "color: #000000;"><i class='glyphicon glyphicon-search'></i> Buscar Categorías</h4>
 		</div>
 		<div class="panel-body">
 		
