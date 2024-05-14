@@ -9,7 +9,7 @@ include('is_logged.php');//Archivo verifica que el usario que intenta acceder a 
 		} else if ($_POST['stock']==""){
 			$errors[] = "Stock del producto vacío";
 		} else if (empty($_POST['precio'])){
-			$errors[] = "Precio de venta vacío";
+			$errors[] = "Precio de compra vacío";
 		} else if (
 			!empty($_POST['codigo']) &&
 			!empty($_POST['nombre']) &&

@@ -110,7 +110,7 @@
                       <span class="item-quantity"><?php echo number_format($row['stock'],2);?></span>
                     </div>
 					<div class="col-sm-12">
-                      <span class="current-stock"> Precio venta  </span>
+                      <span class="current-stock"> Precio de compra del producto  </span>
                     </div>
 					<div class="col-sm-12">
                       <span class="item-price">$ <?php echo number_format($row['precio_producto'],2);?></span>

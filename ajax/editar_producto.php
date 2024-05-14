@@ -10,7 +10,7 @@
 		} else if ($_POST['mod_categoria']==""){
 			$errors[] = "Selecciona la categoría del producto";
 		} else if (empty($_POST['mod_precio'])){
-			$errors[] = "Precio de venta vacío";
+			$errors[] = "Precio de compra vacío";
 		} else if (
 			!empty($_POST['mod_id']) &&
 			!empty($_POST['mod_codigo']) &&
