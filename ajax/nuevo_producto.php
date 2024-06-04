@@ -1,7 +1,7 @@
 <?php
-include('is_logged.php');//Archivo verifica que el usario que intenta acceder a la URL esta logueado
-		
+include('is_logged.php');//Archivo verifica que el usario que intenta acceder a la URL esta logueado		
 	/*Inicia validacion del lado del servidor*/
+	var_dump($_FILES['file']);
 	if (empty($_POST['codigo'])) {
            $errors[] = "Código vacío";
         } else if (empty($_POST['nombre'])){

@@ -10,7 +10,7 @@
 	require_once ("config/conexion.php");//Contiene funcion que conecta a la base de datos
 	
 	$active_productos="active";
-	$title="Inventario | Simple Stock";
+	$title="Inventario | Bodega BELARQ";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -123,7 +123,8 @@ function eliminar (id){
 		
 $( "#guardar_producto" ).submit(function( event ) {
   $('#guardar_datos').attr("disabled", true);
-  
+	var files =  $('#guardar_foto')[0].files[0];
+	parametros.append('file', files);
  var parametros = $(this).serialize();
 	 $.ajax({
 			type: "POST",
