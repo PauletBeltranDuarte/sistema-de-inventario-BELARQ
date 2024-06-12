@@ -122,14 +122,23 @@ function eliminar (id){
 	});
 		
 $( "#guardar_producto" ).submit(function( event ) {
+	event.preventDefault();
+	var formData = new FormData();
   $('#guardar_datos').attr("disabled", true);
-	var files =  $('#guardar_foto')[0].files[0];
-	parametros.append('file', files);
- var parametros = $(this).serialize();
+	var file =  $('#foto_producto')[0].files[0];
+	formData.append('imagen', file);
+	formData.append('categoria', $('#categoria').val())
+	formData.append('codigo', $('#codigo').val())
+	formData.append('nombre', $('#nombre').val())
+	formData.append('precio', $('#precio').val())
+	formData.append('stock', $('#stock').val())
+
 	 $.ajax({
 			type: "POST",
 			url: "ajax/nuevo_producto.php",
-			data: parametros,
+			data: formData,
+			contentType: false,
+            processData: false,
 			 beforeSend: function(objeto){
 				$("#resultados_ajax_productos").html("Mensaje: Cargando...");
 			  },

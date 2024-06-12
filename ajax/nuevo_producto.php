@@ -1,7 +1,12 @@
 <?php
 include('is_logged.php');//Archivo verifica que el usario que intenta acceder a la URL esta logueado		
-	/*Inicia validacion del lado del servidor*/
-	var_dump($_FILES['file']);
+	/*Inicia validacion del lado del	 servidor*/
+	if(isset($_FILES['imagen'])){
+		$filename = $_FILES['imagen']['name'];
+		$location = "img/".$filename;
+		move_uploaded_file($_FILES['imagen']['tmp_name'],$location);
+	}
+
 	if (empty($_POST['codigo'])) {
            $errors[] = "Código vacío";
         } else if (empty($_POST['nombre'])){
