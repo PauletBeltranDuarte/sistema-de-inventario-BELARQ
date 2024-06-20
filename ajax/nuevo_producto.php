@@ -3,7 +3,9 @@ include('is_logged.php');//Archivo verifica que el usario que intenta acceder a 
 	/*Inicia validacion del lado del	 servidor*/
 	if(isset($_FILES['imagen'])){
 		$filename = $_FILES['imagen']['name'];
-		$location = "img/".$filename;
+		$location = "../img/" . $_POST['codigo'] . ".jpg";
+		//$location = "../img/".$filename;
+		//var_dump($location); return;
 		move_uploaded_file($_FILES['imagen']['tmp_name'],$location);
 	}
 
