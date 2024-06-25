@@ -55,7 +55,7 @@
 			<div class="form-group">
 			<label for="foto" class="col-sm-3 control-label">Foto</label>
 			<div class="col-sm-8">
-			<input id="foto_producto" type="file" class="form-control" name="foto" accept="image/jpeg" >
+			<input id="foto_producto" type="file" class="form-control" name="foto" accept="image/*" >
 			</div>
 			</div>
 

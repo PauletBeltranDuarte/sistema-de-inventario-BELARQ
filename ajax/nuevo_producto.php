@@ -1,12 +1,17 @@
 <?php
 include('is_logged.php');//Archivo verifica que el usario que intenta acceder a la URL esta logueado		
 	/*Inicia validacion del lado del	 servidor*/
+	$foto = "stock.png";
 	if(isset($_FILES['imagen'])){
 		$filename = $_FILES['imagen']['name'];
-		$location = "../img/" . $_POST['codigo'] . ".jpg";
+		$array = explode('.', $filename );
+		$ext = end($array);
+		$location = "../img/" . "producto" . $_POST['codigo'] . "." . $ext;
 		//$location = "../img/".$filename;
 		//var_dump($location); return;
 		move_uploaded_file($_FILES['imagen']['tmp_name'],$location);
+		$foto = "producto" . $_POST['codigo'] . "." . $ext;
+
 	}
 
 	if (empty($_POST['codigo'])) {
@@ -35,7 +40,7 @@ include('is_logged.php');//Archivo verifica que el usario que intenta acceder a 
 		$precio_venta=floatval($_POST['precio']);
 		$date_added=date("Y-m-d H:i:s");
 		
-		$sql="INSERT INTO products (codigo_producto, nombre_producto, date_added, precio_producto, stock, id_categoria) VALUES ('$codigo','$nombre','$date_added','$precio_venta', '$stock','$id_categoria')";
+		$sql="INSERT INTO products (codigo_producto, nombre_producto, date_added, precio_producto, stock, id_categoria, photo) VALUES ('$codigo','$nombre','$date_added','$precio_venta', '$stock','$id_categoria', '$foto')";
 		$query_new_insert = mysqli_query($con,$sql);
 			if ($query_new_insert){
 				$messages[] = "Producto ha sido ingresado satisfactoriamente.";

@@ -103,6 +103,7 @@ function eliminar (id){
 				$("#resultados").html("Mensaje: Cargando...");
 			  },
 			success: function(datos){
+				
 			$("#resultados").html(datos);
 			load(1);
 			}
